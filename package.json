@@ -1,0 +1,32 @@
+{
+  "name": "2-web-crawler--frontend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:unit": "vitest"
+  },
+  "dependencies": {
+    "@kangc/v-md-editor": "^2.3.17",
+    "axios": "^1.5.0",
+    "element-plus": "^2.3.12",
+    "jquery": "^3.7.1",
+    "pinia": "^2.1.6",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.1",
+    "@vue/test-utils": "^2.4.1",
+    "jsdom": "^22.1.0",
+    "less": "^4.2.0",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.2",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.2",
+    "vue-loader": "^17.2.2",
+    "vue-template-compiler": "^2.7.14"
+  }
+}
