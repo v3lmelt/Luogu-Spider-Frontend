@@ -179,6 +179,9 @@ export default {
             this.findBySearch();
         }
     },
+    beforeUnmount(){
+        localStorage.removeItem("search_info");
+    },
     computed: {
         tag_filter_text() {
             return this.tags_for_display.join(",");
