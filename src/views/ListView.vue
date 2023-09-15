@@ -169,18 +169,17 @@ export default {
         if(localStorage.getItem("search_info")){
             let info = JSON.parse(localStorage.getItem("search_info"));
             console.log(info)
-            this.storage_info = info.storage_info;
             this.filters = info.filters;
             this.page_helper = info.page_helper;
             this.current_page = info.current_page;
             this.tags_for_display = info.tags_for_display;
-
+            this.findBySearch();
         }else{
             this.findBySearch();
         }
     },
     beforeUnmount(){
-        localStorage.removeItem("search_info");
+        console.log("About to unmount!")
     },
     computed: {
         tag_filter_text() {
